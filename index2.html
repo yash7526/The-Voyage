@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE VOYAGE</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('4ouqbMtemnJPgRT8v');
+        })();
+    </script>
+</head>
+<style>
+    @keyframes slider {
+       0%{
+        background-image: url('img/s1.jpg');
+       }
+       35%{
+        background-image: url('img/s2.jpg');
+       }
+       75%{
+        background-image: url('img/s3.jpg');
+       }
+       95%{
+        background-image: url('img/s4.jpg');
+       }
+    }
+</style>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <!-- <a href="#" class="logo">THE <span> VOYAGE</span></a> -->
+    <img src="logo-light.png" class="logo-image" alt="logo image">
+
+    <nav class="navbar">
+        <a href="#home">HOME</a>
+        <a href="#packages">BOOK</a>
+        <a href="#services">SERVICES</a>
+        <a href="#gallery">GALLERY</a>
+        <a href="#review">REVIEW</a>
+        <a href="#contact">CONTACT</a>
+        <!-- <button type="button" class="btn">LOGIN</button>  -->
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <a href="index.html" class="logout">Logout</a>
+    </div>
+
+    <form action="" class="search-bar-container">
+        
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+
+    
+
+</header>
+
+<!-- header section ends -->
+
+<!-- login form container  -->
+
+
+
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3> Enjoy Your Dream Vacation</h3>
+        <p></p>
+        <a href="#" class="btn">Explore more</a>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="vdos/vdo3.mp4"></span>
+        <span class="vid-btn" data-src="vdos/vdo1.mp4"></span>
+        <span class="vid-btn" data-src="vdos/vdo2.mp4"></span>
+        <span class="vid-btn" data-src="vdos/vdo4.mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="vdos/vdo3.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- book section starts  -->
+
+<section class="book" id="book">
+
+    <h1 class="heading">
+        <span>T</span>
+        <span>H</span>
+        <span>E</span>
+        <span class="space"></span>
+        <span>V</span>
+        <span>O</span>
+        <span>Y</span>
+        <span>A</span>
+        <span>G</span>
+        <span>E</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="img/room.jpeg" alt="">
+        </div>
+        <div class="image">
+            <img src="img/event -traveilling.jpg" alt="">
+        </div>
+        <div class="image">
+            <img src="img/s3.jpg" alt="">
+        </div>
+
+        <form action="">
+            <h1 class="heading1">
+               Facilities Available
+            </h1>
+            <div class="inputBox">
+                <h3><a  href="#">- SUITE ROOMS</a></h3>
+                <br>
+                <h3> <a  href="#">- 24/7 ROOM SERVICES</a></h3>
+                <br>
+                <h3><a  href="#">- SPA & WELLNESS AMENITIES</a></h3>
+                <br>
+                <h3><a  href="#">- EXERCISE FACILITIES AND ACCESSORIES</a></h3>
+                <br>
+                <h3><a  href="#">- POOL FACILITIES</a></h3>
+                <br>
+                <h3><a  href="#">- EVENTS </a></h3>
+                <br>
+                <h3><a  href="#">- DINING</a></h3>
+                <br>
+                <h3><a  href="#">- MEETINGS AND CONFERENCES</a></h3>
+            </div>
+             </form>
+
+    </div>
+
+</section>
+
+<!-- book section ends -->
+
+<!-- packages section starts  -->
+
+<section class="packages" id="packages">
+
+    <h1 class="heading">
+          BOOK ONLINE
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="img/dulex.jpg" alt="">
+            <div class="content">
+                <h3>DULEX ROOMS</h3>
+                <p>₹40,000*/ night</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <br>
+                <a href="#" class="btn">BOOK NOW </a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="./img/presidential suite.jpg" alt="">
+            <div class="content">
+                <h3>PRESIDENTIAL SUITE</h3>
+                <p>₹50,000*/ night</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <br>
+                <a href="#" class="btn">BOOK NOW</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="./img/room.jpeg" alt="">
+            <div class="content">
+                <h3> SUITE ROOMS </h3>
+                <p>₹30,000*/ night</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <br>
+                <a href="#" class="btn">BOOK NOW</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img/penthouse.jpg" alt="">
+            <div class="content">
+                <h3>PENTHOUSE</h3>
+                <p>₹35,000*/ night</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>x
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <br>
+                <a href="#" class="btn">BOOK NOW</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img/meeting.jpeg" alt="">
+            <div class="content">
+                <h3>MEETINGS AND CONFRENCES</h3>
+                <p>₹1,00,000*-₹3,00,000*</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <br>
+                <a href="#" class="btn">BOOK NOW</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img/celebration.jpg" alt="">
+            <div class="content">
+                <h3>CELEBRATIONS</h3>
+                <p>₹2,00,000*-₹8,00,000*</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div> 
+                <br>
+                <a href="#" class="btn">BOOK NOW</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- packages section ends -->
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading">
+        <span>S</span>
+        <span>E</span>
+        <span>R</span>
+        <span>V</span>
+        <span>I</span>
+        <span>C</span>
+        <span>E</span>
+        <span>S</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-coffee"></i>
+            <h3>Beverages</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+        <div class="box">
+            <i class=""></i>
+            <h3>Rooms Avaliable</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-glass-martini"></i>
+            <h3>Spa Treatment</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-cocktail"></i>
+            <h3>24/7 Free Wifi</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-glass-martini-alt"></i>
+            <h3>Vacation</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>Food and Drinks</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+    <h1 class="heading">
+        <span>G</span>
+        <span>A</span>
+        <span>L</span>
+        <span>L</span>
+        <span>E</span>
+        <span>R</span>
+        <span>Y</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="img/pool.webp" alt="">
+            <div class="content">
+                <h3>Pool Area</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="img/camp.jpg" alt="">
+            <div class="content">
+                <h3>Camping</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="img/wedding2.jpg" alt="">
+            <div class="content">
+                <h3>Wedding</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="img/river side.jpg" alt="">
+            <div class="content">
+                <h3>Sea Facing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="img/beverage.jpeg" alt="">
+            <div class="content">
+                <h3>Beverages and more</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="img/gym.jpg" alt="">
+            <div class="content">
+                <h3>Gym</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="img/dinning.jpg" alt="">
+            <div class="content">
+                <h3>Dining</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="img/spa2.jpg" alt="">
+            <div class="content">
+                <h3>Spa</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="img/location.jpg" alt="">
+            <div class="content">
+                <h3>Beautiful Locations</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- gallery section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading">
+        <span>R</span>
+        <span>E</span>
+        <span>V</span>
+        <span>I</span>
+        <span>E</span>
+        <span>W</span>
+    </h1>
+
+    <div class="swiper-container review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <section class="section-4">
+      
+                        <div class="team row ">
+                          <div class="col-md-4 col-12 text-center">
+                              <div class="card mr-2 d-inline-block shadow-lg">
+                                  <div class="card-img-top">
+                                    <img src="pic1.png" class="img-fluid border-radius p-4" alt="">
+                                  </div>
+                                  <div class="card-body">
+                                    <h3 class="card-title">Joe Simons</h3>
+                                    <p class="card-text">
+                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum fugiat ut, deserunt quos explicabo assumenda fuga,                                    
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam suscipit atque deserunt ipsam. Esse quis ipsum commodi, nesciunt, recusandae velit ratione dolor neque totam qui quidem accusamus magni adipisci incidunt?
+                                    </p>   
+                                  </div>
+                                  <div class="stars">
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="far fa-star"></i>
+                                  </div>
+                                </div>
+                          </div>
+                          <div class="col-md-4 col-12 text-center">
+                              <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
+                                  <div class="carousel-inner text-center">
+                                    <div class="carousel-item active">
+                                      <div class="card mr-2 d-inline-block shadow">
+                                        <div class="card-img-top">
+                                          <img src="pic2.png" class="img-fluid rounded-circle w-50 p-4" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                          <h3 class="card-title">Aiden Gerald</h3>
+                                           <p class="card-text">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum obcaecati consequuntur, omnis architecto, culpa pariatur voluptates molestias dolorem neque hic eveniet corrupti ea magnam repudiandae exercitationem perferendis provident. Labore, numquam.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci blanditiis, ipsum dicta excepturi voluptates quia ab deserunt veritatis at quos sit nemo velit fugit culpa architecto ullam doloribus, dolorem libero.
+
+                                        </p>
+                                          </div>
+                                          <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <div class="card  d-inline-block mr-2 shadow">
+                                        <div class="card-img-top">
+                                          <img src="pic3.png" class="img-fluid rounded-circle w-50 p-4" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                          <h3 class="card-title">Rachel Green</h3>
+                                          <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod veritatis quasi ullam architecto assumenda ipsam soluta officiis earum rerum eius saepe ad error, porro maiores, veniam ipsum, fuga beatae modi.
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint facere, optio, iusto nobis nostrum ipsum magni iure maiores accusamus repudiandae fugiat eveniet dolo
+                                     </p>
+                                        </div>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                          </div>
+                          </div>
+                          <div class="col-md-4 col-12 text-center">
+                              <div class="card mr-2 d-inline-block shadow-lg">
+                                  <div class="card-img-top">
+                                    <img src="pic4.png" class="img-fluid border-radius p-4" alt="">
+                                  </div>
+                                  <div class="card-body">
+                                    <h3 class="card-title">Marcel </h3>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum fugiat ut, deserunt quos explicabo assumenda fuga,                                    
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam suscipit atque deserunt ipsam. Esse quis ipsum commodi, nesciunt, recusandae velit ratione dolor neque totam qui quidem accusamus magni adipisci incidunt?
+                                        </p>
+                                  </div>
+                                  <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                </div>
+                          </div>
+                        </div>
+                      </section>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+
+<!-- review section ends -->
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+    
+    <h1 class="heading">
+        <span>C</span>
+        <span>O</span>
+        <span>N</span>
+        <span>T</span>
+        <span>A</span>
+        <span>C</span>
+        <span>T</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="img/contact.jpg" alt="">
+        </div>
+
+        <div class="form">
+            <div class="inputBox">
+                <input type="text" id="Name" placeholder="Name">
+                <input type="email" id="email_id" placeholder="Email Id">
+            </div>
+            <div class="inputBox">
+                <input type="number" id="number" placeholder="Contact Number">
+                <input type="text" id="subject" placeholder="Feedback">
+            </div>
+            <textarea id="message" placeholder="Message" name=""   cols="30" rows="10"></textarea>
+             
+            <button onclick="SendMail()" class="btn btn-light px-5 py-2 primary-btn">
+                Submit
+              </button>
+        </div>
+
+    </div>
+    
+</section>
+
+<!-- contact section ends -->
+
+<!-- brand section  -->
+<!-- <section class="brand-container">
+
+    <div class="swiper-container brand-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="g-1.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="g-1.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="g-1.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="g-1.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="g-1.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="g-1.jpeg" alt=""></div>
+        </div>
+    </div>
+
+</section> -->
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>About Us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas magni pariatur est accusantium voluptas enim nemo facilis sit debitis.</p>
+        </div>
+        <div class="box">
+            <h3>Branch Locations</h3>
+            <a href="#">Jaipur</a>
+            <a href="#">Goa</a>
+            <a href="#">Pondicherry</a>
+            <a href="#">Srinagar</a>
+            <a href="#">Meghalaya</a>
+        </div>
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="#home">The Voyage</a>
+            <a href="#packages">Events</a>
+            <a href="#services">Stay</a>
+            <a href="#gallery">Spa</a>
+            <a href="#review">Review</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="https://www.facebook.com" target="_blank">facebook</a>
+            <a href="https://www.instagram.com" target="_blank">instagram</a>
+            <a href="https://www.twitter.com" target="_blank">twitter</a>
+            <a href="https://www.youtube.com" target="_blank">youtube</a>
+        </div>
+        
+    </div>
+
+    <h1 class="credit"> <span>Thank you for visiting us  !!!</span></h1>
+
+</section>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+<script src="email.js"></script>
+ 
+
+</body>
+</html>
